@@ -1,0 +1,131 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YogurFight - Valores Detallados</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8f0;
+      color: #4b2e00;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #FFB347;
+      color: #4b2e00;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      border-radius: 8px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+    header p {
+      font-style: italic;
+      font-size: 1.1rem;
+      margin-top: 0.3rem;
+    }
+    header img {
+      max-height: 100px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      width: auto;
+    }
+    main h2 {
+      color: #FFAA33;
+      text-align: center;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #FFD580;
+      padding-bottom: 0.5rem;
+      font-size: 2rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    main section {
+      background: #fffaf0;
+      padding: 1.5rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      color: #663d00;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+      animation-delay: 0.3s;
+      animation-fill-mode: forwards;
+    }
+    main section h3 {
+      color: #FFAA33;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+    }
+    main section p {
+      margin: 0 0 1rem 0;
+      text-align: justify;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header img {
+        margin-top: 1rem;
+        max-height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>YogurFight</h1>
+      <p>Sabor y tradición en cada producto</p>
+    </div>
+    <img src="empresa.png" alt="empresa.png" loading="lazy" />
+  </header>
+
+  <main>
+    <h2>Valores</h2>
+
+    <section>
+      <h3>Calidad</h3>
+      <p>Nos comprometemos a ofrecer productos de la mejor calidad, elaborados con ingredientes naturales y técnicas tradicionales que garantizan un sabor auténtico y nutritivo.</p>
+    </section>
+
+    <section>
+      <h3>Sostenibilidad</h3>
+      <p>Valoramos el cuidado del medio ambiente, promoviendo prácticas responsables en la producción, el uso de recursos renovables y el apoyo a la economía local.</p>
+    </section>
+
+    <section>
+      <h3>Tradición</h3>
+      <p>Respetamos y preservamos las técnicas y conocimientos ancestrales en la elaboración del yogurt, honrando nuestra cultura y patrimonio.</p>
+    </section>
+  </main>
+</body>
+</html>
+```
